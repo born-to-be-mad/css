@@ -1,0 +1,56 @@
+.grid {
+  --gap: 20px;
+  --min-card-width: 30ch;
+  --cols: 3;
+  --preferred-value: ((var(--min-card-width) * var(--cols) - var(--gap) * 2) - 100%) * 999;
+  display: grid;
+  gap: var(--gap);
+
+  /* Using min() */
+  /*
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(
+        min(
+          var(--preferred-value),
+          100%),
+      1fr
+      )
+    );
+ */
+  /* Using clamp():
+  The 33.3333 percent represents the size of each of our cards (making room for three columns) given that the value is no bigger than the preferred value: (40rem - 100%) * 999. When the grid container reaches 40rem, it becomes a single column grid with a maximum value of 100 percent.
+  The instruction for this layout reads, “If the card container goes below a width of 40rem, then the cards should stack.”
+  */
+  
+  grid-template-columns:
+    repeat(
+      auto-fit,
+	  minmax(
+		clamp(
+			  33.3333% - var(--gap), /* min value */
+			  var(--preferred-value), /* preferred value */
+			  100% /* max value */
+			),
+		1fr
+		)
+    );
+}
+
+.item {
+  padding: 1.35rem;
+  background: #90bcbc;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+
+body {
+  padding: 20px;
+  color: #332182;
+}

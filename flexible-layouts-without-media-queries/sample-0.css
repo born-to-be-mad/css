@@ -1,0 +1,25 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    /* minmax(350px,  1fr ) */
+      minmax(min(100%, 350px) /* min value */, 1fr /* max value */)
+  );
+  gap: 20px;
+}
+
+.item {
+  padding: 1.35rem;
+  background: #90bcbc;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  padding: 20px;
+  color: #332182;
+}

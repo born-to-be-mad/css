@@ -1,0 +1,36 @@
+.grid {
+  --gap: 20px;
+  display: grid;
+  gap: var(--gap);
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      /* max value */ 
+	  /* clamn in action: declare that the minimum value should be 50 percent, the preferred value should be 350 pixels, and the maximum size should be 100 percent. */ 
+	  clamp(50% - var(--gap), 350px, 100%),
+      /* the same result via min */
+      /* min(100%, max(50% - var(--gap), 200px)), */
+      /* the same result via max */
+      /* max(50% - var(--gap), min(350px, 100%)), */ 
+	  /* max value */ 
+	  1fr
+    )
+  );
+}
+
+.item {
+  padding: 1.35rem;
+  background: #90bcbc;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+body {
+  padding: 20px;
+  color: #332182;
+}
