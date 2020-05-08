@@ -1,0 +1,50 @@
+* {
+  --fluid-size: var(--min-font-size) * 1px + (var(--max-font-size) - var(--min-font-size)) * ((100vw - 420px) / (1200 - 420));
+}
+
+h2 {
+  --min-font-size: 30;
+  --max-font-size: 70;
+  font-size:
+    clamp(
+        var(--min-font-size) * 1px, /* we multiple 1px so the value becomes pixel-based */
+        var(--fluid-size),
+        var(--max-font-size) * 1px /* we multiple 1px so the value becomes pixel-based */
+    );
+}
+
+/*
+Using viewport units as the fluid size. Using clamp() we are  able to cap the values at each end making sure that the font-size won’t become too big or too small.
+*/
+h1 {
+  --minFontSize: 28px;
+  --maxFontSize: 200px;
+  --scaler: 10vw;
+  font-size: clamp(var(--minFontSize), var(--scaler), var(--maxFontSize));
+}
+
+
+p {
+  --min-font-size: 16;
+  --max-font-size: 30;
+  font-size:
+    clamp(
+        var(--min-font-size) * 1px,
+        var(--fluid-size),
+        var(--max-font-size) * 1px
+    );
+}
+
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}

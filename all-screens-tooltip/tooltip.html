@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="build/index.css">
+  </head>
+  <body>
+
+<div class="main">
+
+<div 
+  class="tooltip-right"
+  data-pui-tooltip="This is what our tooltips look like.">
+  Tooltip test 
+</div
+
+  <p>Scale the page below 768px to see the centered mobile tooltip display.</p>
+  <div class="flex">
+    <div class="wrapper">
+      <p>Right tooltip</p>
+      <div class="tooltip-right" data-tooltip="This tooltip opens to the right.">
+          <i class="fas fa-question-circle" focusable="false" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="wrapper">
+      <p>Left tooltip</p>
+      <div class="tooltip-left" data-tooltip="This tooltip opens to the left.">
+          <i class="fas fa-question-circle" focusable="false" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="wrapper">
+      <p>Top tooltip</p>
+      <div class="tooltip-top" data-tooltip="This tooltip opens above.">
+          <i class="fas fa-question-circle" focusable="false" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="wrapper">
+      <p>Bottom tooltip</p>
+      <div class="tooltip-bottom" data-tooltip="This tooltip opens below.">
+          <i class="fas fa-question-circle" focusable="false" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+<div class="wrapper">
+  <p>Mobile tooltip</p>
+  <div class="tooltip-right tooltip-mobile" data-tooltip="This tooltip is centered on a mobile screen.">
+        <i class="fas fa-question-circle" focusable="false" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>  
+  
+  </body>
+</html>
