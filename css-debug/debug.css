@@ -1,0 +1,3 @@
+*, *:before, *:after {
+    outline: solid 1px #000;
+}
