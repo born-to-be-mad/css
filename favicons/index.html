@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+	
+	<meta name="theme-color" content="#ffffff">
+	<link rel="icon" href="favicon.svg">
+	<link rel="mask-icon" href="mask-icon.svg" color="#000000">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="manifest" href="manifest.json">
+  </head>
+  <body>
+   <div>
+	<b>Icon</b>. The main favicon can be an SVG of any size. The type type=”image/svg+xml” is unnecessary.
+   </div>
+   
+   <div>
+	<b>Mask icon</b>. For Safari, it’s a bit different. You need to add a mask-icon. It’s also an SVG, but it has to be made of a single colour and placed on a transparent background. The browser adds the colour of the attribute.
+   </div>
+   
+   <div>
+	<b>Touch icon</b>. The icon for iOS devices as well as favourites from browsers new tab page and more. You only need the 180 x 180 size, and the sizes attribute is superfluous.
+   </div>
+   
+   <div>
+	<b>Manifest</b>. The manifest.json provides information about your web app or website. These lines are mandatory to pass Lighthouse’s test. The icon linked is used by Android and Chrome. The largest size 512 x 512 is the only one needed.
+   <pre>
+	{
+		"name": "Starter",
+		"short_name": "Starter",
+		"icons": [{
+			"src": "google-touch-icon.png",
+			"sizes": "512x512"
+		}],
+		"background_color": "#ffffff",
+		"theme_color": "#ffffff",
+		"display": "fullscreen"
+	}   
+   </pre>
+   </div>
+	  
+   <div>
+    <b>Dark mode</b> One of the benefits of an SVG favicon is that you can change the colour with CSS. Using the prefers-color-scheme media query, the colour of your favicon changes with the users dark or light mode. This method won’t work with the mask-icon since the colour is in the attribute but Safari adds a white background if there isn’t enough contrast.
+   </div>
+   
+   <div>
+    <b>For old browsers</b>32 x 32 favicon.ico at the root of your website.
+   </div>
+
+  </body>
+</html>
