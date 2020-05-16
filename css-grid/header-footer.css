@@ -5,17 +5,13 @@ body {
 header,
 footer {
   padding: 25px 0;
+  background-color: green;
 }
 
 header,
 footer,
 nav {
   margin: 20px 0;
-}
-
-header,
-footer {
-  background-color: orange;
 }
 
 section {
@@ -53,7 +49,7 @@ nav ul {
   background-color: black;
 }
 
-.container-main{
+.container-main {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
@@ -73,6 +69,7 @@ nav ul {
 .item {
   grid-column: span 6;
 }
+
 .item-inner {
   grid-column: span 3;
 }
