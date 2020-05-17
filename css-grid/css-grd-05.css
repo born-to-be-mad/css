@@ -1,0 +1,40 @@
+body {
+  color: white;
+}
+.container {
+  display: grid;
+
+  gap: 10px 30px; /* vertical horizontal */
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header"
+    /* "article article sidebar" */
+    "sidebar article article"
+    "footer footer footer";
+}
+
+.container > * {
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: darkgreen;
+}
+
+article {
+  grid-area: article;
+  background-color: black;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: maroon;
+}
+
+footer {
+  grid-area: footer;
+  background-color: darkgreen;
+}
