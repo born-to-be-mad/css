@@ -6,7 +6,8 @@ body {
   gap: 10px;
 
   /* grid-template-columns: 200px 400px 100px; */
-  grid-template-columns: repeat(3, 300px);
+  /* grid-template-columns: repeat(3, 300px); */
+  grid-template-columns: 200px 1fr 100px; /* fraction */
 
   grid-template-rows: 300px 80px;
 }
