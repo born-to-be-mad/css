@@ -3,6 +3,7 @@ body {
 }
 .container {
   display: grid;
+
   gap: 10px 30px; /* vertical horizontal */
 
   /* grid-template-columns: 200px 400px 100px; */
@@ -20,4 +21,12 @@ body {
   padding: 1rem;
   border-radius: 10px;
   background-color: darkblue;
+}
+
+.item:nth-child(3) {
+  order: -1; /* make item 3 first */
+}
+
+.item:nth-child(2) {
+  order: 2; /* make item 2 the last cause the default order 1 */
 }
