@@ -20,6 +20,16 @@
         margin-bottom: 10px;
       }
 
+      .progress-sm {
+        height: 0.5rem;
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+
+      .progress-container > :first-child {
+        padding-left: 10px;
+      }
+
       .progress-custom {
         background-color: #636c72;
       }
@@ -129,38 +139,202 @@ See <a href="https://getbootstrap.com/docs/4.0/components/progress/">Bootrap Pro
 </section>
 
 <section>
-    <h1>Custom</h1>
+    <h1>Custom - petrol </h1>
     <p>
     <div class="progress progress-custom">
         <div class="progress-bar" role="progressbar"
-             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-             style="width: 100%;" data-toggle="tooltip" data-placement="top" title="Registered">
-            <span class="sr-only">Registered</span>
+             style="width: 100%;" title="Not yet filed" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Not yet filed</span>
+            <span class="progress-type">BY</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 50%;" title="Filed" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Filed</span>
+            <span class="progress-type">RU</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 75%;" title="Cancelled" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Published</span>
+            <span class="progress-type">AT</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 75%;" title="In Opposition" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">In Opposition</span>
             <span class="progress-type">EU</span>
         </div>
     </div>
     <div class="progress progress-custom">
         <div class="progress-bar" role="progressbar"
-             aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-             style="width: 60%;" data-toggle="tooltip" data-placement="top" title="Registered">
-            <span class="sr-only">Almost registered</span>
-            <span class="progress-type">EU01</span>
+             style="width: 50%;" title="Abandoned" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Abandoned</span>
+            <span class="progress-type">WONL</span>
         </div>
     </div>
     <div class="progress progress-custom">
-        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0"
-             aria-valuemax="100"
-             style="width: 100%;" data-toggle="tooltip" data-placement="top" title="Cancelled">
-            <span class="sr-only">Cancelled</span>
+        <div class="progress-bar" role="progressbar"
+             style="width: 100%;" title="In Opposition" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Inactive</span>
             <span class="progress-type">WOTR</span>
         </div>
     </div>
     <div class="progress progress-custom">
-        <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0"
-             aria-valuemax="100"
-             style="width: 5%;" data-toggle="tooltip" data-placement="top" title="Waiting for approval">
-            <span class="sr-only">Waiting for approval</span>
-            <span class="progress-type">US01</span>
+        <div class="progress-bar" role="progressbar"
+             style="width: 100%;" title="Registered" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Registered</span>
+            <span class="progress-type">WO</span>
+        </div>
+    </div>
+    </p>
+</section>
+
+<section>
+    <h1>Custom - colored </h1>
+    <p>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 1%;" title="Not yet filed" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Not yet filed</span>
+            <span class="progress-type">BY</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 50%;" title="Filed" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Filed</span>
+            <span class="progress-type">RU</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar" role="progressbar"
+             style="width: 75%;" title="Cancelled" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Published</span>
+            <span class="progress-type">AT</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar bg-warning" role="progressbar"
+             style="width: 75%;" title="In Opposition" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">In Opposition</span>
+            <span class="progress-type">EU</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar bg-danger" role="progressbar"
+             style="width: 50%;" title="Abandoned" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Abandoned</span>
+            <span class="progress-type">WONL</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar bg-danger" role="progressbar"
+             style="width: 100%;" title="In Opposition" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Inactive</span>
+            <span class="progress-type">WOTR</span>
+        </div>
+    </div>
+    <div class="progress progress-custom">
+        <div class="progress-bar bg-success" role="progressbar"
+             style="width: 100%;" title="Registered" data-toggle="tooltip" data-placement="top"
+             aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <span class="sr-only">Registered</span>
+            <span class="progress-type">WO</span>
+        </div>
+    </div>
+    </p>
+</section>
+
+<section>
+    <h1>Custom - small, colored</h1>
+    <p>
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">BY</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar" role="progressbar"
+                 aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 1%;" data-toggle="tooltip" data-placement="top" title="Not yet filed">
+                <span class="sr-only">Not yet filed</span>
+            </div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">RU</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar" role="progressbar"
+                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 50%;" data-toggle="tooltip" data-placement="top" title="Filed">
+                <span class="sr-only">Filed</span>
+            </div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">AT</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar" role="progressbar"
+                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 75%;" data-toggle="tooltip" data-placement="top" title="Published">
+                <span class="sr-only">Published</span>
+            </div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">EU</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar bg-warning" role="progressbar"
+                 aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 75%;" data-toggle="tooltip" data-placement="top" title="In Opposition">
+                <span class="sr-only">In Opposition</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">WONL</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar bg-danger" role="progressbar"
+                 aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 50%;" data-toggle="tooltip" data-placement="top" title="Abandoned">
+                <span class="sr-only">Abandoned</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">WOTR</a>
+        <div class="progress progress-sm">
+            <div class="progress-bar bg-danger" role="progressbar"
+                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 100%;" data-toggle="tooltip" data-placement="top" title="Inactive">
+                <span class="sr-only">Inactive</span>
+            </div>
+        </div>
+    </div>
+    <div class="progress-container">
+        <a href="" target="_blank" rel="noopener">WO</a>
+        <div class="progress progress-custom progress-sm">
+            <div class="progress-bar bg-success" role="progressbar"
+                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                 style="width: 100%;" data-toggle="tooltip" data-placement="top" title="Registered">
+                <span class="sr-only">Registered</span>
+            </div>
         </div>
     </div>
     </p>
